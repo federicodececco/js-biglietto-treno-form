@@ -29,7 +29,11 @@ const generateCP = () => {
 const trainCar = () => {
     return Math.floor(Math.random() * (12 - 1) + 1)
 }
-
+/**
+ * 
+ * @param {string} age - age of the passenger
+ * @returns a string containing the type of ticket to be made
+ */
 const ticketType = (age) => {
     if (age === "other") return "Biglietto standard"
     else return "Biglietto ridotto"
@@ -37,7 +41,7 @@ const ticketType = (age) => {
 
 formElm.addEventListener("submit", function (event) {
     event.preventDefault();
-    const name = document.getElementById("nameSurname").value;
+    const name = document.getElementById("nameSurname").value; 
     const km = document.getElementById("kms").value;
     const age = document.getElementById("age").value;
     let numAge;

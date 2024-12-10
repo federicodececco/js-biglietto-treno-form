@@ -2,10 +2,27 @@
   --mainColor: #b91547;
   --secondaryColor: white;
   --contrastColor: #757575;
+  --btnContrast: #c5c5c5;
 }
 
+.btn-primary {
+  color: var(--mainColor);
+  background-color: var(--btnContrast);
+  border-radius: 5px;
+  border: solid 1px grey;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.3125rem 0.4375rem;
+}
+.btn-primary:hover {
+  outline: solid 2px #d69a70;
+  border: solid 1px #d69a70;
+  cursor: pointer;
+}
 
-.d-none{display: none;}
+.d-none {
+  display: none;
+}
 
 body {
   background-color: var(--mainColor);
@@ -21,15 +38,35 @@ h1 {
 
 .data {
   background-color: var(--secondaryColor);
-  margin: 1.25rem auto;
+  margin: 1.5rem auto;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .data-top {
   display: flex;
   justify-content: space-around;
+  padding: 1.25rem 30px;
+  font-size: 1.125rem;
+  color: var(--mainColor);
+}
+.data-top > div > input,
+.data-top > div > select {
+  margin-top: 20px;
+  display: block;
+  font-size: 1rem;
+  color: black;
+  border: solid 1px var(--mainColor);
+  border-radius: 5px;
 }
 .data-top > div {
   display: flex;
   flex-direction: column;
+}
+form > div:last-of-type {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
 }
 .ticket {
   text-align: left;
@@ -41,5 +78,5 @@ h1 {
   justify-content: space-between;
 }
 .ticket-line > div:first-of-type {
-  background-color:var(--contrastColor) ;
+  background-color: var(--contrastColor);
 }
