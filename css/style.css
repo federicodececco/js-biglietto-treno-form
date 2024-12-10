@@ -5,6 +5,29 @@
   --btnContrast: #c5c5c5;
 }
 
+/*---------------------------
+
+
+  RESET
+
+
+------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/*---------------------------
+
+
+    BUTTONS
+
+
+------------------------------*/
+
 .btn-primary {
   color: var(--mainColor);
   background-color: var(--btnContrast);
@@ -20,28 +43,67 @@
   cursor: pointer;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-.roboto-regular {
-  font-weight: 400;
-  font-style: normal;
-}
-/* .d-none {
-  display: none;
-} */
+/*---------------------------
+
+
+    GENERAL
+
+
+------------------------------*/
 
 body {
+  font-family: "Roboto", sans-serif;
   background-color: var(--mainColor);
 }
+
+.d-none {
+  display: none;
+}
+h3 {
+  margin: 0 auto;
+}
+h1:last-of-type {
+  margin: 0.1875rem 0;
+  color: var(--secondaryColor);
+}
+h4 {
+  margin-top: 0.3125rem;
+  font-size: 1.0625rem;
+}
+
 main {
   max-width: 50rem;
   margin: auto;
   text-align: center;
 }
-h1 {
-  color: var(--secondaryColor);
+
+/*---------------------------
+
+
+    INPUT
+
+
+------------------------------*/
+
+.input-style {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding: 8px 0px;
+  text-align: center;
+  border: 1px solid var(--mainColor);
 }
+
+/*---------------------------
+
+
+    MAIN
+
+
+------------------------------*/
+
+/*---------------------------
+data section(the one with the form)
+------------------------------*/
 
 .data {
   background-color: var(--secondaryColor);
@@ -57,13 +119,7 @@ h1 {
   font-size: 1.125rem;
   color: var(--mainColor);
 }
-.input-style {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  padding: 8px 0px;
-  text-align: center;
-  border: 1px solid var(--mainColor);
-}
+
 .data-top > div > input,
 .data-top > div > select {
   margin-top: 20px;
@@ -83,16 +139,9 @@ form > div:last-of-type {
   justify-content: center;
   gap: 1.25rem;
 }
-h3 {
-  margin: 0 auto;
-}
-h1:last-of-type {
-  margin: 0.1875rem 0;
-}
-h4 {
-  margin-top: 0.3125rem;
-  font-size: 1.0625rem;
-}
+/*---------------------------
+ticket section (the one not visible normally)
+------------------------------*/
 .ticket {
   text-align: left;
   background-color: var(--secondaryColor);
