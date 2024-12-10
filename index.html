@@ -21,17 +21,19 @@
                     type="text"
                     id="nameSurname"
                     name="nameSurname"
-                    value="Gigio"
+                    value=""
+                    placeholder="Mario Rossi"
+                    required
                   />
                 </div>
                 <div>
                   <label for="kms">Km da percorrere</label>
-                  <input type="text" id="kms" name="kms" value="tanti" />
+                  <input type="number" id="kms" name="kms" value="" placeholder="tanti" required />
                 </div>
     
                 <div>
                   <span>fascia d'età</span>
-                  <select form_id="ticketF" name="age" id="age">
+                  <select form_id="ticketF" name="age" id="age" required>
                     <option value="minor">Minorenne</option>
                     <option value="other">Maggiorenne</option>
                     <option value="over">Over-65</option>
