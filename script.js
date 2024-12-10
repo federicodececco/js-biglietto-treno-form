@@ -22,6 +22,18 @@ const calculatePrice = (length, age) => {
 const generateCP = () => {
     return Math.floor(Math.random() * (999999 - 1) + 1)
 }
+/**
+ * 
+ * @returns a random number between 12 and 1
+ */
+const trainCar = () => {
+    return Math.floor(Math.random() * (12 - 1) + 1)
+}
+
+const ticketType = (age) => {
+    if (age === "other") return "Biglietto standard"
+    else return "Biglietto ridotto"
+}
 
 formElm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -33,12 +45,12 @@ formElm.addEventListener("submit", function (event) {
     if (age === "minor") numAge = 1
     else if (age === "over") numAge = 66
     else numAge = 22
-    const price = calculatePrice(parseFloat(km), numAge)
+
     document.getElementById("nameT").innerHTML = `${name}`
-    document.getElementById("offer").innerHTML = `${age}`
-    document.getElementById("car").innerHTML = ``
+    document.getElementById("offer").innerHTML = `${ticketType(age)}`
+    document.getElementById("car").innerHTML = `${trainCar()}`
     document.getElementById("code").innerHTML = `${generateCP()}`
-    document.getElementById("price").innerHTML = `${price}€`
+    document.getElementById("price").innerHTML = `${calculatePrice(parseFloat(km), numAge)}€`
     ticket.classList.remove("d-none");
     title.classList.remove("d-none");
 })
