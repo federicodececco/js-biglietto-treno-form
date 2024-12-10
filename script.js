@@ -15,7 +15,13 @@ const calculatePrice = (length, age) => {
 
 
 }
-
+/**
+ * return a random cambio prenotazione code
+ * @returns a random number between 999999 and 1
+ */
+const generateCP = () => {
+    return Math.floor(Math.random() * (999999 - 1) + 1)
+}
 
 formElm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -31,7 +37,7 @@ formElm.addEventListener("submit", function (event) {
     document.getElementById("nameT").innerHTML = `${name}`
     document.getElementById("offer").innerHTML = `${age}`
     document.getElementById("car").innerHTML = ``
-    document.getElementById("code").innerHTML = `2`
+    document.getElementById("code").innerHTML = `${generateCP()}`
     document.getElementById("price").innerHTML = `${price}€`
     ticket.classList.remove("d-none");
     title.classList.remove("d-none");
