@@ -1,0 +1,28 @@
+:root {
+  --mainColor: #b91547;
+}
+
+body {
+  background-color: var(--mainColor);
+}
+main {
+  max-width: 50rem;
+  margin: auto;
+  text-align: center;
+}
+h1 {
+  color: white;
+}
+
+.data {
+  background-color: white;
+  margin: 1.25rem auto;
+}
+.ticket-top {
+  display: flex;
+  justify-content: space-around;
+}
+.ticket-top > div {
+  display: flex;
+  flex-direction: column;   
+}

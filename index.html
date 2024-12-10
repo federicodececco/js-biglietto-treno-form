@@ -8,16 +8,35 @@
   </head>
   <body>
     <main>
-      <h1></h1>
+      <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
       <!-- form section -->
-      <section>
-        <form action="">
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
+      <section class="data">
+        <form action="" id="ticket">
+          <div class="ticket-top">
+            <div>
+              <label for="nameSurname">Nome Cognome</label>
+              <input
+                type="text"
+                id="nameSurname"
+                name="nameSurname"
+                value="Gigio"
+              />
+            </div>
+            <div>
+              <label for="kms">Km da percorrere</label>
+              <input type="text" id="kms" name="kms" value="tanti" />
+            </div>
+
+            <div>
+              <span>fascia d'età</span>
+              <select form_id="ticket" name="age" id="age">
+                <option value="minor">Minorenne</option>
+                <option value="other">Maggiorenne</option>
+                <option value="over">Over-65</option>
+              </select>
+            </div>
           </div>
-          <div><button></button><button></button></div>
+          <div><button>Genera</button><button>Annulla</button></div>
         </form>
       </section>
       <h1></h1>
