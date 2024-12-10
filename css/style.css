@@ -20,9 +20,16 @@
   cursor: pointer;
 }
 
-.d-none {
-  display: none;
+body {
+  font-family: "Roboto", sans-serif;
 }
+.roboto-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+/* .d-none {
+  display: none;
+} */
 
 body {
   background-color: var(--mainColor);
@@ -40,7 +47,8 @@ h1 {
   background-color: var(--secondaryColor);
   margin: 1.5rem auto;
   border-radius: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .data-top {
   display: flex;
@@ -68,15 +76,34 @@ form > div:last-of-type {
   justify-content: center;
   gap: 1.25rem;
 }
+h3 {
+  margin: 0 auto;
+}
+h1:last-of-type {
+  margin: 0.1875rem 0;
+}
+h4 {
+  margin-top: 0.3125rem;
+  font-size: 1.0625rem;
+}
 .ticket {
   text-align: left;
   background-color: var(--secondaryColor);
+  padding: 0.9375rem 1.25rem;
 }
 .ticket-line {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
 }
 .ticket-line > div:first-of-type {
   background-color: var(--contrastColor);
+  padding: 1.375rem;
+}
+.ticket-line > div:not(:first-of-type) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
