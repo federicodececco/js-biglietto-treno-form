@@ -1,5 +1,7 @@
 :root {
   --mainColor: #b91547;
+  --secondaryColor: white;
+  --contrastColor: #757575;
 }
 
 body {
@@ -11,18 +13,30 @@ main {
   text-align: center;
 }
 h1 {
-  color: white;
+  color: var(--secondaryColor);
 }
 
 .data {
-  background-color: white;
+  background-color: var(--secondaryColor);
   margin: 1.25rem auto;
 }
-.ticket-top {
+.data-top {
   display: flex;
   justify-content: space-around;
 }
-.ticket-top > div {
+.data-top > div {
   display: flex;
-  flex-direction: column;   
+  flex-direction: column;
+}
+.ticket {
+  text-align: left;
+  background-color: var(--secondaryColor);
+}
+.ticket-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ticket-line > div:first-of-type {
+  background-color:var(--contrastColor) ;
 }
