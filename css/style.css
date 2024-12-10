@@ -4,6 +4,9 @@
   --contrastColor: #757575;
 }
 
+
+.d-none{display: none;}
+
 body {
   background-color: var(--mainColor);
 }

@@ -8,61 +8,65 @@
   </head>
   <body>
     <main>
-      <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-      <!-- form section -->
-      <section class="data">
-        <form action="" id="ticketF">
-          <div class="data-top">
-            <div>
-              <label for="nameSurname">Nome Cognome</label>
-              <input
-                type="text"
-                id="nameSurname"
-                name="nameSurname"
-                value="Gigio"
-              />
-            </div>
-            <div>
-              <label for="kms">Km da percorrere</label>
-              <input type="text" id="kms" name="kms" value="tanti" />
-            </div>
-
-            <div>
-              <span>fascia d'età</span>
-              <select form_id="ticketF" name="age" id="age">
-                <option value="minor">Minorenne</option>
-                <option value="other">Maggiorenne</option>
-                <option value="over">Over-65</option>
-              </select>
-            </div>
-          </div>
-          <div><button>Genera</button><button>Annulla</button></div>
-        </form>
-      </section>
-      <h1>IL TUO BIGLIETTO</h1>
+      <main>
+        <main>
+          <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+          <!-- form section -->
+          <section class="data">
+            <form action="" id="ticketForm">
+              <div class="data-top">
+                <div>
+                  <label for="nameSurname">Nome Cognome</label>
+                  <input
+                    type="text"
+                    id="nameSurname"
+                    name="nameSurname"
+                    value="Gigio"
+                  />
+                </div>
+                <div>
+                  <label for="kms">Km da percorrere</label>
+                  <input type="text" id="kms" name="kms" value="tanti" />
+                </div>
+    
+                <div>
+                  <span>fascia d'età</span>
+                  <select form_id="ticketF" name="age" id="age">
+                    <option value="minor">Minorenne</option>
+                    <option value="other">Maggiorenne</option>
+                    <option value="over">Over-65</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <button type="submit">Genera</button><button id="reset" type="reset">Annulla</button>
+              </div>
+            </form>
+          </section >
+      <h1 id="ticket-title" class="d-none">IL TUO BIGLIETTO</h1>
       <!-- ticket section -->
-      <section class="ticket">
+      <section class="ticket d-none" id="ticket-main">
         <h3>DETTAGLIO PASSEGGERI</h3>
         <div class="ticket-line">
-        <div>
-          <h3>NOME PASSEGGERO</h3>
-          <h4></h4>
-        </div>
+          <div>
+            <h3>NOME PASSEGGERO</h3>
+            <h4 id="nameT"></h4>
+          </div>
           <div>
             <h5>Offerta</h5>
-            <p></p>
+            <p id="offer"></p>
           </div>
           <div>
             <h5>Carrozza</h5>
-            <p></p>
+            <p id="car"></p>
           </div>
           <div>
             <h5>Codive CP</h5>
-            <p></p>
+            <p id="code"></p>
           </div>
           <div>
             <h5>Costo biglietto</h5>
-            <p></p>
+            <p id="price"></p>
           </div>
         </div>
       </section>
